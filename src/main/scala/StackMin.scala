@@ -56,7 +56,7 @@ object StackMin extends App{
 
   def push(a: Int): Unit ={
     min = minStack()
-    if(a < min){ min = a}
+    if(a < min || StackMin.arrayStack.isEmpty){ min = a}
     StackMin.arrayStack.prepend(List(a,min))
   }
 
