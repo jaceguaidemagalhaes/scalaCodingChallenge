@@ -48,24 +48,27 @@ object StackMin extends App{
   }
 
 
-
+  //return the stack min
   def minStack(): Int={
     if(arrayStack.isEmpty) return 0
     else return arrayStack.head(1)
   }
 
+  //insert a value on top of the stack
   def push(a: Int): Unit ={
     min = minStack()
     if(a < min || StackMin.arrayStack.isEmpty){ min = a}
     StackMin.arrayStack.prepend(List(a,min))
   }
 
+  //returns the top value and removes it from the stack
   def pop(): Int={
     val result = StackMin.arrayStack.head(0)
     StackMin.arrayStack.remove(0)
     return result
   }
 
+  //prints the actual stack
   def printArray(): Unit={
   print("Stack: (")
     for(elem <- arrayStack){
