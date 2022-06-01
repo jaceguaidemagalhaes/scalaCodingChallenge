@@ -15,7 +15,7 @@ Output: 9 -> 1 -> 2. That is, 912.
 
 2) **StackMin**: How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
 
-# Weekly Coding Challenge 06/01/2022:
+## Weekly Coding Challenge 06/01/2022:
 
 
 a) **IsvalidHexCode** Create a function that determines whether a string is a valid hex code.
